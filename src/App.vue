@@ -1,11 +1,17 @@
 <template>
+<v-app>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <v-toolbar>
+	<v-toolbar-items class="hidden-sm-and-down">
+          <v-btn to="/" exact><router-link to="/">Home</router-link></v-btn>
+          <v-btn to="/about" exact><router-link to="/about">About</router-link></v-btn>
+        </v-toolbar-items>
+	<v-spacer></v-spacer>
+	<v-toolbar-title> Lord of the Keyboard </v-toolbar-title>
+    </v-toolbar>
     <router-view/>
   </div>
+</v-app>
 </template>
 
 <style lang="scss">

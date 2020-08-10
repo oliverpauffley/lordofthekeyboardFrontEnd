@@ -1,5 +1,7 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+<v-app>
+  <div class="home">
+	<h2> about page</h2>
   </div>
+</v-app>
 </template>
